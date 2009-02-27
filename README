@@ -1,0 +1,80 @@
+libmpd
+------------------------------------------
+libmpd is a abstraction layer around libmpdclient. It provides a 
+high level access to mpd.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.4-1
+  mpd-0.14.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://gmpc.wikia.com/wiki/Libmpd
+
+Canonical download:
+  http://downloads.sourceforge.net/musicpd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libmpd-0.17.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libmpd-0.17.0-X.cygport all
+
+This will create:
+  /usr/src/libmpd-0.17.0-X-src.tar.bz2
+  /usr/src/libmpd-devel-0.17.0-X.tar.bz2
+  /usr/src/libmpd0-0.17.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libmpd0)
+  /usr/bin/cygmpd-0.dll
+  /usr/share/doc/libmpd-0.17.0/COPYING
+  /usr/share/doc/libmpd-0.17.0/ChangeLog
+  /usr/share/doc/libmpd-0.17.0/INSTALL
+  /usr/share/doc/libmpd-0.17.0/README
+
+(libmpd-devel)
+  /usr/include/libmpd-1.0/libmpd/debug_printf.h
+  /usr/include/libmpd-1.0/libmpd/libmpd-database.h
+  /usr/include/libmpd-1.0/libmpd/libmpd-internal.h
+  /usr/include/libmpd-1.0/libmpd/libmpd-player.h
+  /usr/include/libmpd-1.0/libmpd/libmpd-playlist.h
+  /usr/include/libmpd-1.0/libmpd/libmpd-status.h
+  /usr/include/libmpd-1.0/libmpd/libmpd-strfsong.h
+  /usr/include/libmpd-1.0/libmpd/libmpd-version.h
+  /usr/include/libmpd-1.0/libmpd/libmpd.h
+  /usr/include/libmpd-1.0/libmpd/libmpdclient.h
+  /usr/lib/libmpd.a
+  /usr/lib/libmpd.dll.a
+  /usr/lib/libmpd.la
+  /usr/lib/pkgconfig/libmpd.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.17.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

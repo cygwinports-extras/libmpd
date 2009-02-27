@@ -1,0 +1,11 @@
+--- origsrc/libmpd-0.17.0/configure.ac	2008-12-25 15:54:15.000000000 -0600
++++ src/libmpd-0.17.0/configure.ac	2009-02-27 10:27:37.889750000 -0600
+@@ -20,7 +20,7 @@ case $host in
+     EXTRA_LDFLAGS="-export-all-symbols -mwindows -no-undefined -lws2_32 -mms-bitfields" ;;
+   *-*-cygwin*)
+     EXTRA_CFLAGS="-fno-strict-aliasing"
+-    EXTRA_LDFLAGS="-export-all-symbols -mms-bitfields";;
++    EXTRA_LDFLAGS="-export-all-symbols -no-undefined";;
+ esac
+ AC_SUBST(EXTRA_CFLAGS)
+ AC_SUBST(EXTRA_LDFLAGS)   
