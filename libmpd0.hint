@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libglib2.0_0 mpd
+requires: libglib2.0_0 mpd
 external-source: libmpd
 sdesc: "Client library for the Music Player Daemon (runtime)"
 ldesc: "libmpd is a abstraction layer around libmpdclient. It provides a 
