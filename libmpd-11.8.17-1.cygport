@@ -3,6 +3,6 @@ HOMEPAGE="http://gmpc.wikia.com/wiki/Libmpd"
 SRC_URI="mirror://sourceforge/musicpd/${P}.tar.gz"
 PATCH_URI="0.17-no-undefined.patch"
 
-PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
+PKG_NAMES="${PN}1 ${PN}-devel"
 libmpd1_CONTENTS="usr/bin/cygmpd-1.dll usr/share/doc/"
 libmpd_devel_CONTENTS="usr/include/ usr/lib/"
