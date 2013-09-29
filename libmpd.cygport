@@ -1,0 +1,15 @@
+NAME="libmpd"
+VERSION=11.8.17
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Music Player Daemon client library"
+DESCRIPTION="libmpd is a GLib-based library providing high-level access to the
+Music Player Daemon."
+HOMEPAGE="http://gmpclient.org/"
+SRC_URI="http://www.musicpd.org/download/libmpd/${VERSION}/libmpd-${VERSION}.tar.gz"
+PATCH_URI="0.17-no-undefined.patch"
+
+PKG_NAMES="${NAME}1 ${NAME}-devel"
+libmpd1_REQUIRES="mpd"
+libmpd1_CONTENTS="usr/bin/cygmpd-1.dll usr/share/doc/"
+libmpd_devel_CONTENTS="usr/include/ usr/lib/"

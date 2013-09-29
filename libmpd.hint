@@ -1,4 +1,0 @@
-category: Audio
-sdesc: "Client library for the Music Player Daemon (sources)"
-ldesc: "libmpd is a abstraction layer around libmpdclient. It provides a 
-high level access to mpd."
